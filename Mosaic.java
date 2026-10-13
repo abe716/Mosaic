@@ -27,6 +27,12 @@ class MosaicFrame extends JFrame{
 
         JButton randomize = new JButton("Randomize");
         buttonPanel.add(randomize);
+
+        JPanel MosaicGridPanel = new JPanel();
+        contentPane.add(MosaicGridPanel, BorderLayout.CENTER);
+        MosaicGridPanel.setLayout(new GridLayout(12,12));
+        
+
     }
 }
 public class Mosaic {
