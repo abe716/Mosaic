@@ -1,3 +1,4 @@
+
 import java.awt.Graphics;
 import java.awt.Color;
 
@@ -13,7 +14,6 @@ public class FaceDraw {
         g.setColor(new Color(255, 220, 90));
         g.fillOval(x, y, size, size);
 
-        // Draw the outline.
         g.setColor(Color.BLACK);
         g.drawOval(x, y, size, size);
 
@@ -22,27 +22,24 @@ public class FaceDraw {
         int eyeY = centerY - size / 6;
 
         g.fillOval(
-            centerX - size / 4,
-            eyeY,
-            eyeSize,
-            eyeSize
-        );
+                centerX - size / 4,
+                eyeY,
+                eyeSize,
+                eyeSize);
 
         g.fillOval(
-            centerX + size / 5,
-            eyeY,
-            eyeSize,
-            eyeSize
-        );
+                centerX + size / 5,
+                eyeY,
+                eyeSize,
+                eyeSize);
 
         // Draw the smile.
         g.drawArc(
-            centerX - size / 4,
-            centerY - size / 8,
-            size / 2,
-            size / 2,
-            200,
-            140
-        );
+                centerX - size / 4,
+                centerY - size / 8,
+                size / 2,
+                size / 2,
+                200,
+                140);
     }
 }
